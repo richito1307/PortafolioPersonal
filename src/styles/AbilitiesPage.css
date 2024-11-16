@@ -1,0 +1,56 @@
+/* styles/AbilitiesPage.css */
+
+/* Aplicando los estilos definidos en theme.css */
+@import './theme.css';
+
+.abilities-page {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--color-background); /* Fondo claro del tema */
+}
+
+/* Asegura que h2 dentro de .abilities-page tenga el estilo */
+.abilities-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-accent); /* Color del título según el tema */
+}
+
+.tech-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo de cada tarjeta tecnológica */
+.tech-card {
+    background-color: var(--color-secondary); /* Color de fondo secundario del tema */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Agregado efecto de escala */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el icono de cada tarjeta */
+.tech-card .icon {
+    margin-bottom: 15px;
+    color: var(--color-accent); /* Color del icono según el tema */
+}
+
+.tech-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-text); /* Color del título dentro de la tarjeta */
+}
+
+.tech-card p {
+    font-size: 1rem;
+    color: var(--color-text); /* Color del texto dentro de la tarjeta */
+}

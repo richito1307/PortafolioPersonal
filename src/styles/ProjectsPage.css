@@ -1,0 +1,80 @@
+/* styles/ProjectsPage.css */
+
+/* Importando el tema para usar las variables */
+@import './theme.css';
+
+.projects-page {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--color-background);  /* Fondo oscuro según el tema */
+    color: var(--color-text);  /* Color de texto general */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-accent);  /* Usar el color primario para los títulos */
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: var(--color-secondary);  /* Fondo oscuro de la tarjeta */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--color-text);  /* Texto claro dentro de la tarjeta */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Efecto de hover para mayor énfasis */
+}
+
+.project-card .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-accent);  /* Usar el color de acento para los títulos de proyectos */
+}
+
+.project-card .tags {
+    margin-bottom: 15px;
+}
+
+.project-card .tag {
+    background-color: var(--color-primary);  /* Fondo oscuro para las etiquetas */
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #fff;  /* Asegura que el texto de las etiquetas sea blanco */
+}
+
+.project-card .project-link {
+    background-color: var(--color-accent);  /* Usar el color de acento para el botón */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .project-link:hover {
+    background-color: var(--color-link-hover);  /* Color más brillante en el hover */
+}

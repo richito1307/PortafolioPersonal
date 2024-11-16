@@ -1,0 +1,11 @@
+/* theme.css */
+:root {
+    --color-primary: #1f1f1f; /* Gris oscuro casi negro para el fondo principal */
+    --color-secondary: #333333; /* Gris más claro para los elementos secundarios */
+    --color-accent: #fd4e20;  /* Naranja vibrante para resaltar elementos importantes */
+    --color-background: #121212; /* Fondo oscuro para todo el cuerpo */
+    --color-footer-bg: #1c1c1c; /* Fondo oscuro para el footer */
+    --color-text: #e0e0e0; /* Texto claro para contrastar sobre el fondo oscuro */
+    --color-link: #fd4e20; /* Color de los enlaces en naranja */
+    --color-link-hover: #ff5722; /* Color más brillante para el hover de los enlaces */
+}

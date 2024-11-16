@@ -1,0 +1,40 @@
+/* styles/Footer.css */
+
+/* Aplicando los estilos definidos en theme.css */
+@import './theme.css';
+
+.footer {
+    background: var(--color-footer-bg); /* Fondo del footer usando el gradiente definido en theme.css */
+    padding: 30px;
+    text-align: center;
+    color: white;
+    /* Usar flexbox para el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Asegura que el footer esté dentro del flujo de la página */
+    margin-top: auto; /* Hace que el footer se quede al final */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-icon {
+    cursor: pointer;
+    font-size: 2rem; /* Ajusta el tamaño según prefieras */
+    user-select: none; /* Esto evita que el emoji sea seleccionado como texto */
+    text-decoration: none; /* Evita subrayado si es un enlace o similar */
+  }
+  
+
+.footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-secondary); /* Color del texto en el footer según el tema */
+}
+

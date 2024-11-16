@@ -1,0 +1,22 @@
+/* Importamos el tema */
+@import './theme.css';
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+main {
+    flex: 1;  /* Hace que el contenido principal ocupe todo el espacio disponible */
+    padding: 40px;
+}

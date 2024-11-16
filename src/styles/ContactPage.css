@@ -1,0 +1,94 @@
+/* Aplicando los estilos definidos en theme.css */
+@import './theme.css';
+
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: var(--color-background); /* Fondo oscuro del tema */
+    color: var(--color-text); /* Color de texto general */
+}
+
+.contact-left, .contact-right {
+    width: 48%;
+}
+
+.contact-left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-accent); /* Usar el color de acento para los títulos */
+}
+
+.contact-left p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--color-text); /* Color del texto en el lado izquierdo con color de texto claro */
+}
+
+.social-icons a {
+    margin: 0 15px;
+    color: var(--color-accent); /* Color de los iconos sociales en color de acento */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-primary); /* Cambio de color al hacer hover en los iconos */
+}
+
+.social-icons span {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons span:hover {
+    color: var(--color-primary);
+}
+
+.contact-right h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--color-accent); /* Usar el color de acento para los títulos */
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: var(--color-accent); /* Color de las etiquetas con color de acento */
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-accent); /* Borde de los campos de entrada con color de acento */
+    font-size: 1rem;
+    color: var(--color-text); /* Texto claro dentro de los campos de entrada */
+    background-color: var(--color-secondary); /* Fondo oscuro de los campos */
+    width: 100%; /* Asegura que los campos tengan el mismo ancho */
+}
+
+button {
+    background-color: var(--color-accent); /* Fondo de color de acento para el botón */
+    color: var(--color-text); /* Texto claro en el botón */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary); /* Cambio de color del botón al hacer hover */
+}

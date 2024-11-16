@@ -1,0 +1,36 @@
+/* styles/PresentationPage.css */
+
+/* Importando el tema para usar las variables */
+@import './theme.css';
+
+.presentation-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--color-background);  /* Usar el color de fondo del tema */
+    color: var(--color-text);  /* Color general de texto para la página */
+}
+
+.presentation-page .content {
+    flex: 1;
+    padding: 20px;
+}
+
+.presentation-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-link);  /* Usar el color primario del tema */
+}
+
+.presentation-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-text);  /* Usar el color secundario para el texto */
+}
+
+.presentation-page .image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra más pronunciada para mejorar el diseño */
+}
