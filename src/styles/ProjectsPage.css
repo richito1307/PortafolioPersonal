@@ -6,75 +6,98 @@
 .projects-page {
     text-align: center;
     padding: 40px;
-    background-color: var(--color-background);  /* Fondo oscuro según el tema */
-    color: var(--color-text);  /* Color de texto general */
+    background-color: var(--color-background); /* Fondo general */
+    color: var(--color-text); /* Color general del texto */
 }
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: var(--color-accent);  /* Usar el color primario para los títulos */
+    margin-bottom: 30px;
+    color: var(--color-accent); /* Color de acento para el título principal */
+    text-transform: uppercase; /* Estilo en mayúsculas para mayor énfasis */
+    letter-spacing: 1px;
 }
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
     margin-top: 20px;
 }
 
 .project-card {
-    background-color: var(--color-secondary);  /* Fondo oscuro de la tarjeta */
+    background-color: var(--color-secondary); /* Fondo de las tarjetas */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: var(--color-text);  /* Texto claro dentro de la tarjeta */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--color-text);
+    overflow: hidden; /* Evitar que elementos extra se desborden */
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Efecto de hover para mayor énfasis */
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Efecto de hover más marcado */
 }
 
 .project-card .project-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Animación sutil para la imagen */
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05); /* Zoom ligero al hacer hover */
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--color-accent);  /* Usar el color de acento para los títulos de proyectos */
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--color-accent); /* Color de acento para los títulos */
 }
 
 .project-card .tags {
-    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .project-card .tag {
-    background-color: var(--color-primary);  /* Fondo oscuro para las etiquetas */
-    padding: 5px 10px;
-    margin: 5px;
+    background-color: var(--color-primary); /* Fondo de las etiquetas */
+    padding: 6px 12px;
     border-radius: 4px;
-    font-size: 0.9rem;
-    color: #fff;  /* Asegura que el texto de las etiquetas sea blanco */
+    font-size: 0.85rem;
+    color: #fff; /* Texto blanco para las etiquetas */
+    font-weight: bold;
+}
+
+.project-card .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: var(--color-text-secondary); /* Color secundario para el texto descriptivo */
 }
 
 .project-card .project-link {
-    background-color: var(--color-accent);  /* Usar el color de acento para el botón */
+    display: inline-block;
+    background-color: var(--color-accent); /* Botón con el color de acento */
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
-    text-decoration: none;
+    font-size: 0.9rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .project-card .project-link:hover {
-    background-color: var(--color-link-hover);  /* Color más brillante en el hover */
+    background-color: var(--color-link-hover); /* Color más brillante en hover */
+    transform: translateY(-3px); /* Pequeño movimiento hacia arriba */
 }

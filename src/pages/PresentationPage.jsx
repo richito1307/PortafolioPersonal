@@ -11,9 +11,7 @@ const PresentationPage = () => {
         </p>
         
       </div>
-      <div className="image">
-        <img src="ruta-a-tu-imagen.jpg" alt="Imagen de presentación" />
-      </div>
+      
     </div>
   );
 }

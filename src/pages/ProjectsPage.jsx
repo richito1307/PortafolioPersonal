@@ -3,25 +3,29 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import '../styles/ProjectsPage.css';
 
+import proyecto1 from '../images/Innovatec.jpeg';
+import proyecto2 from '../images/movil.jpeg';
+import proyecto3 from '../images/web.jpeg';
+
 const ProjectsPage = () => {
   const projects = [
     {
-      title: 'Proyecto 1',
-      image: 'ruta-a-imagen-del-proyecto1.jpg',
-      tags: ['React', 'Node.js', 'CSS'],
-      link: 'https://link-del-proyecto1.com'
+      title: 'CasyNew',
+      image: proyecto1,
+      tags: ['React', 'Azure', 'Inteligencia Artificial'],
+      description: 'Aplicación web desarrollada en React con integración de servicios de Azure, implementando IA para el reconocimiento de ropa y búsqueda de prendas similares.'
     },
     {
-      title: 'Proyecto 2',
-      image: 'ruta-a-imagen-del-proyecto2.jpg',
-      tags: ['Python', 'Django', 'HTML'],
-      link: 'https://link-del-proyecto2.com'
+      title: 'E-commerce Móvil',
+      image: proyecto2,
+      tags: ['Dart', 'Flutter', 'Sprin gBoot'],
+      description: 'Aplicación móvil de e-commerce diseñada con Dart y Flutter, centrada en una experiencia de usuario optimizada y conectada a un backend con Spring Boot.'
     },
     {
-      title: 'Proyecto 3',
-      image: 'ruta-a-imagen-del-proyecto3.jpg',
-      tags: ['JavaScript', 'MongoDB', 'Express'],
-      link: null // Este proyecto no tiene enlace
+      title: 'E-commerce Web para Admins',
+      image: proyecto3,
+      tags: ['React', 'Spring Boot', 'JavaScript'],
+      description: 'Versión web del sistema de e-commerce para administradores, con énfasis en el backend desarrollado en Spring Boot y una interfaz en React.'
     }
   ];
 
@@ -35,7 +39,7 @@ const ProjectsPage = () => {
             title={project.title}
             image={project.image}
             tags={project.tags}
-            link={project.link}
+            description={project.description}
           />
         ))}
       </div>
